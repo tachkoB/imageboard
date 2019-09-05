@@ -1,0 +1,171 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+.imgboard {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.resultsButton {
+    margin-left: 47%;
+    margin-right: 47%;
+    margin-bottom: 20px;
+    width: 6%;
+    height: 30px;
+}
+.outerModal {
+    position: absolute;
+}
+.wrapper {
+    width: 100%;
+    height: 40px;
+}
+.x {
+    margin-bottom: 0px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 25px;
+}
+.x:hover {
+    cursor: pointer;
+}
+.commentArea {
+    width: 100%;
+    height: 100px;
+}
+.user {
+    color: blue;
+}
+.commentContainer {
+    margin-bottom: 15px;
+    color: white;
+    background-color: grey;
+    border: 2px solid white;
+    min-height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+input,
+button {
+    font-family: "Squada One", cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-left: 10px;
+}
+
+.cards {
+    border: 1px solid black;
+    height: 310px;
+    width: 230px;
+    margin: 10px;
+}
+.cards:hover {
+    box-shadow: 5px 5px;
+}
+img {
+    padding-top: 10px;
+    height: 220px;
+    width: 230px;
+}
+img:hover {
+    cursor: pointer;
+}
+.imgmodal {
+    /* margin-top: 10px; */
+    margin-left: 10%;
+    /* border: 1px solid white; */
+    height: 264px;
+    width: 276px;
+}
+
+.modal {
+    border: 1px solid white;
+    overflow-y: auto;
+    z-index: 100;
+    position: fixed;
+    top: 5%;
+    left: 15%;
+    background-color: rgba(100, 100, 100, 0.7);
+    width: 70%;
+    height: 450px;
+}
+.shroudModal {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(191, 191, 191, 0.5);
+}
+.imgcontainer,
+.textcontainer {
+    /* margin-top: -15px; */
+    color: white;
+    height: 290px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 290px;
+}
+
+@media screen and (max-width: 800px) {
+    .imgboard {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .imgmodal {
+        height: 120px;
+        width: 150px;
+        padding-top: 30px;
+    }
+    .cards {
+        border: 2px solid black;
+        height: 255px;
+        width: 200px;
+        margin: 5px;
+    }
+    img {
+        height: 150px;
+        width: 190px;
+    }
+    img:hover {
+        cursor: pointer;
+    }
+    .modal {
+        overflow-y: auto;
+        z-index: 100;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(100, 100, 100, 0.7);
+        width: 100%;
+    }
+    .resultsButton {
+        margin-left: 41%;
+        margin-right: 36%;
+        margin-bottom: 100px;
+        width: 18%;
+        height: 33px;
+    }
+}
